@@ -1,14 +1,24 @@
-GEM
+PATH
+  remote: .
   specs:
-    ffi (1.9.10)
+    simple_pell_checker (0.0.2)
+      levenshtein-ffi
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ffi (1.9.14)
     levenshtein-ffi (1.1.0)
       ffi (~> 1.9)
+    rake (11.3.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  levenshtein-ffi
+  bundler (~> 1.3)
+  rake
+  simple_pell_checker!
 
 BUNDLED WITH
-   1.11.2
+   1.12.5
